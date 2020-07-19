@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/MF/logo about</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1E7E93" offset="0%"></stop>
+            <stop stop-color="#0D485A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="5.03686021%" x2="63.0430279%" y2="66.5641236%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon/MF/logo-about" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M101,61 L101,79.8099915 C101,87.5863364 97.3154812,94.6582766 91.2928273,100.03285 C85.1345188,105.48045 76.6340108,109.151063 67,110 L67,110 L67,61 L101,61 Z M58,23 L58,110 C48.3185959,109.143129 39.7682776,105.438214 33.6859669,99.9397052 C27.6715924,94.514906 24,87.3768776 24,79.5278616 L24,79.5278616 L24,23 L58,23 Z M101,23 L101,53 L67,53 L67,23 L101,23 Z" id="形状结合" fill="url(#linearGradient-1)"></path>
+        <path d="M58.2727273,23 L58.2710211,34.1659501 C43.5121944,43.3720568 31.5692119,56.5552117 23.9991046,72.1834968 L24,23 L58.2727273,23 Z M67.7269297,29.0009707 L67.7272727,23 L84.2913721,23.0000245 C78.5326242,24.4893724 72.9921247,26.5083997 67.7269297,29.0009707 Z" id="形状结合" fill="url(#linearGradient-2)"></path>
+    </g>
+</svg>
