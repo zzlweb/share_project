@@ -2,14 +2,14 @@
   <a-layout id="components-layout-demo-custom-trigger">
     <a-layout-sider v-model="collapsed" :trigger="null" collapsible flex-row>
       <div class="logo flex-row"><img src="../assets/svg/MF_logo_about.svg" alt="联影"><span>Share Happiness</span></div>
-      <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
-        <a-menu-item key="1">
-          <a-icon type="right-square" />
-          <span>2020/7/25</span>
+      <a-menu theme="dark" mode="inline" :default-selected-keys="defult_key">
+        <a-menu-item key="1" @click="$router.push('/')">
+          <a-icon type="right-square" :style="{marginLeft: '4px'}" />
+          <span :style="{ marginLeft : '20px'}">2020/7/25</span>
         </a-menu-item>
-        <a-menu-item key="2">
-          <a-icon type="right-square" />
-          <span>Stay tuned</span>
+        <a-menu-item key="2" @click="$router.push('/second_share')">
+          <a-icon type="right-square" :style="{marginLeft: '4px'}"/>
+          <span :style="{ marginLeft : '20px'}">Stay tuned</span>
         </a-menu-item>
       </a-menu>
     </a-layout-sider>
@@ -22,9 +22,8 @@
         />
       </a-layout-header>
       <a-layout-content
-        :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"
+        :style="{ background: '#fff', minHeight: '280px' }"
       >
-        <!-- 动态路由,json_server,一键换肤 -->
         <router-view />
       </a-layout-content>
     </a-layout>
@@ -33,16 +32,22 @@
 
 <script>
 // @ is an alias to /src
-
 export default {
   name: 'Home',
   components: {
   },
   data () {
     return {
-      collapsed: false
+      collapsed: false, 
+      defult_key: ['1']
     }
+  }, 
+  methods: {
+  },
+
+  beforeRouterUpdate(to , from , next ){
   }
+
 }
 </script>
 
@@ -67,7 +72,7 @@ export default {
 #components-layout-demo-custom-trigger .logo {
   height: 32px;
   overflow: hidden;
-
+  cursor: pointer;
   img{
     width: 32px;
     height: 32px;

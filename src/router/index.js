@@ -1,20 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import FirstShare from '../components/FirstShare.vue'
+import Home from 'views/Home.vue'
+// import FirstShare from '../components/FirstShare.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
     component: Home,
     children: [
       {
         path: '/',
         // 路由懒加载
-        component: () => import( '../components/FirstShare.vue'),
+        component: () => import( 'components/FirstShare.vue'),
         name: 'FirstShare',
+      },
+      {
+        path: 'second_share', 
+        name: 'second_share',
+        component:() => import ('components/SecondShare.vue'),
       }
     ]
   }
